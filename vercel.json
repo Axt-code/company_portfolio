@@ -1,3 +1,5 @@
+
+
 {
     "builds": [{
     "src": "avs/wsgi.py",
@@ -9,6 +11,7 @@
     "src":"/(.*)",
     "dest": "avs/wsgi.py"
     }
-    ]
+    ],
+     "buildCommand": "./install_postgresql.sh && vercel build"
 }
     
