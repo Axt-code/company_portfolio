@@ -1,5 +1,3 @@
-
-
 {
     "builds": [{
     "src": "avs/wsgi.py",
