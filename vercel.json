@@ -1,14 +1,17 @@
 {
-    "builds": [{
+  "builds": [{
     "src": "avs/wsgi.py",
     "use": "@vercel/python",
-    "config": { "maxLambdaSize": "15mb", "runtime": "python3.12.6" }
-    }],
-    "routes": [
-    {
-    "src":"/(.*)",
-    "dest": "avs/wsgi.py"
+    "config": { 
+      "maxLambdaSize": "15mb", 
+      "runtime": "python3.12.6",
+      "installCommand": "apt-get update && apt-get install -y libpq-dev && pip install -r requirements.txt"
     }
-    ]
+  }],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "avs/wsgi.py"
+    }
+  ]
 }
-    
