@@ -1,0 +1,745 @@
+{% load static  %}
+<html lang="en">
+
+    <head>
+       
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>About</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{% static './css/index.css' %}">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+
+    <body  data-new-gr-c-s-check-loaded="14.998.0" data-gr-ext-installed="">
+        
+        <script>
+            (function () {
+                if (typeof _bsa !== 'undefined' && _bsa) {
+                    // format, zoneKey, segment:value, options
+                    _bsa.init('flexbar','CKYI627U','placement:cyberayoutscom');
+                }
+            })();
+        </script>
+        <script>
+            (function () {
+                if (typeof _bsa !== 'undefined' && _bsa) {
+                    // format, zoneKey, segment:value, options
+                    _bsa.init('fancybar','CKYDL2JN','placement:demo');
+                }
+            })();
+        </script>
+        <script>
+            (function () {
+                if (typeof _bsa !== 'undefined' && _bsa) {
+                    // format, zoneKey, segment:value, options
+                    _bsa.init('stickybox','CKYI653J','placement:cyberayoutscom');
+                }
+            })();
+        </script>
+        <!--<script>(function(v,d,o,ai){ai=d.createElement("script");ai.defer=true;ai.async=true;ai.src=v.location.protocol+o;d.head.appendChild(ai);})(window, document, "//a.cdo.ai/core/cyberayouts_V2/cdo.ai.js?cdo=34");</script>-->
+
+        <script>
+            window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+            ga('create','UA-149859901-1','demo.cyberayouts.com');
+            ga('require','eventTracker');
+            ga('require','outboundLinkTracker');
+            ga('require','urlChangeTracker');
+            ga('send','pageview');
+        </script>
+   
+
+        <meta name="robots" content="noindex">
+
+        <!-- Demo bar start -->
+
+        <!-- New toolbar-->
+        <style>
+            * {
+                box-sizing: border-box;
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            }
+
+
+            #cyberDemoBar.cyber-demo-bar {
+                top: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 9999;
+                padding: 40px 5px;
+                padding-top: 70px;
+                margin-bottom: 70px;
+                background: #0D1326;
+                border-top-left-radius: 9px;
+                border-bottom-left-radius: 9px;
+            }
+
+            #cyberDemoBar.cyber-demo-bar a {
+                display: block;
+                color: #e6ebff;
+                text-decoration: none;
+                line-height: 24px;
+                opacity: .6;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            #cyberDemoBar.cyber-demo-bar span.cyber-icon {
+                display: block;
+            }
+
+            #cyberDemoBar.cyber-demo-bar a:hover {
+                opacity: 1;
+            }
+
+            #cyberDemoBar.cyber-demo-bar .cyber-icon svg {
+                color: #e6ebff;
+            }
+
+            #cyberDemoBar.cyber-demo-bar .responsive-icons {
+                margin-top: 30px;
+                border-top: 1px solid #41414d;
+                padding-top: 40px;
+            }
+
+            #cyberDemoBar.cyber-demo-bar .demo-btns {
+                border-top: 1px solid #41414d;
+                padding-top: 30px;
+            }
+
+            #cyberDemoBar.cyber-demo-bar .responsive-icons a span.fa {
+                font-size: 26px;
+            }
+
+            #cyberDemoBar.cyber-demo-bar .no-margin-bottom {
+                margin-bottom: 0;
+            }
+
+            .toggle-right-sidebar span {
+                background: #0D1326;
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                color: #e6ebff;
+                border-radius: 50px;
+                font-size: 26px;
+                cursor: pointer;
+                opacity: .5;
+            }
+
+            .pull-right {
+                float: right;
+                position: fixed;
+                right: 0px;
+                top: 70px;
+                width: 90px;
+                z-index: 99999;
+                text-align: center;
+            }
+
+            /* ============================================================*/
+
+
+            .hide-right-bar-notifications {
+                margin-right: -300px !important;
+                -webkit-transition: all .3s ease-in-out;
+                -moz-transition: all .3s ease-in-out;
+                -o-transition: all .3s ease-in-out;
+                transition: all .3s ease-in-out;
+            }
+
+
+
+            @media (max-width: 992px) {
+                #cyberDemoBar.cyber-demo-bar a.desktop-mode {
+                    display: none;
+
+                }
+            }
+
+            @media (max-width: 767px) {
+                #cyberDemoBar.cyber-demo-bar a.tablet-mode {
+                    display: none;
+
+                }
+            }
+
+            @media (max-width: 568px) {
+                #cyberDemoBar.cyber-demo-bar a.mobile-mode {
+                    display: none;
+                }
+
+                #cyberDemoBar.cyber-demo-bar .responsive-icons {
+                    margin-top: 0px;
+                    border-top: none;
+                    padding-top: 0px;
+                }
+
+                #right-sidebar,
+                .pull-right {
+                    width: 90px;
+                }
+
+                #cyberDemoBar.cyber-demo-bar .no-margin-bottom-mobile {
+                    margin-bottom: 0;
+                }
+            }
+
+        </style>
+        <style>
+                .navbar {
+                    color: #111 !important;
+                }
+                .navbar-nav {
+                    float: none;
+                    font-weight: normal !important;
+                    font-size: 15px !important;
+                    background: transparent ;
+                    color: #111 !important;
+                }
+
+                .nav-item {
+                    padding: 0px !important;
+                }
+                .active:hover{
+                    background-color: rgba(214, 222, 224, 0.92)  !important;
+                }
+
+                .flex-column li:hover {
+                    background-color:rgba(151, 189, 199, 0.99) !important;
+                }
+
+                .dropdown-item:hover {
+                    background-color:rgba(151, 189, 199, 0.99) !important;
+                }
+
+                .nav-link {
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 25px;
+                    color: rgb(0 0 0);
+                    text-transform: capitalize;
+                }
+
+                .about-menu {
+                    width: 180px !important;
+                    margin: 2px 20rem;
+                }
+
+                .navbar .dropdown-menu {
+                    background-color:rgba(214, 222, 224, 0.92)  !important;
+                }
+
+                
+                @media (max-width: 992px) {
+                    .about-menu {
+                        margin: 0 0;
+                    }
+                }
+
+        </style>
+         <style>
+            .align-left {
+                float: left;
+                margin-right: 20px;
+            }
+
+            .align-right {
+                margin-left: 40px !important;
+            }
+
+            .slide-in {
+                opacity: 0;
+                transition: all .5s;
+            }
+
+            .align-left.slide-in {
+                transform: translateX(-30%) scale(0.95);
+            }
+
+            .align-right.slide-in {
+                transform: translateX(30%) scale(0.95);
+            }
+
+            .slide-in.active {
+                opacity: 1;
+                transform: translateX(0%) scale(1);
+            }
+
+        </style>
+     
+
+        <!-- Top Menu 1 -->
+        <section class="cyber-top-menu-1 p-sticky-md">
+            <div class="top-hd">
+                <div class="wrapper">
+                    <header class="d-grid grid-columns-2">
+
+
+                        <div class="accounts">
+                            <li class="top_li"><span class="fa fa-mobile"></span><a
+                                    href="tel:+142 5897555">+919999999999</a> </li>
+                            <li class="top_li1"><span class="fa fa-map-marker"></span> Birla Nagar Gwalior </li>
+                            <li class="top_li2"><span class="fa fa-clock-o"></span> Mon - Sat 6:00 - 18:00 / Closed
+                                on Weekends</li>
+                        </div>
+                    </header>
+                </div>
+            </div>
+        </section>
+        <!-- //Top Menu 1 -->
+        <!-- Headers-4 block -->
+         <div class="n w-100" style="background-color: whitesmoke;">
+                <nav class="navbar navbar-expand-lg w-75 mx-auto navbar-light" style="background-color: whitesmoke;">
+                    <a class="navbar-brand brand-logo" href="/">
+                        <h1><span class="fa fa-industry"></span> AVS</h1>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class=" navbar-nav mr-auto ">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Products
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+
+                                    <div class="container" style="background-color: rgba(214, 222, 224, 0.92) !important ">
+                                        <div class="row">
+                                           <div class="col-md-4">
+
+                                                <ul class="nav flex-column">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" href="#">Flexible Packaging</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/product/3/">LDPE Poly Bag</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/product/2/">Liner LDPE /HM </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/product/4/">Air Bubble Film Rolls </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/product/5/">Air Bubble Pouches</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/product/6/">Non Woven Fabric Bag</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/product/7/">LDPE Shrink Film Rolls/Pouches</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/product/8/">LDPE Printed Bag</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/product/9/">Laminated Pouches</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- /.col-md-4  -->
+                                            <div class="col-md-4">
+
+                                                <ul class="nav flex-column">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" href="#">WPC Products</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/product/10/">Door Frames</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/product/11/">Ceiling Strip wall Paneling</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/product/12/">Decking (Ado deck)</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/product/13/">Front Elevation clading</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/product/14/">WPC planks for gate</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/product/15/">Stair Case & Hand Railing</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/product/16/">WPC Benches </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/product/17/">Picket Fenching</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- /.col-md-4  -->
+                                            <div class="col-md-4">
+
+                                             <ul class="nav flex-column">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" href="#">HDPE Pipe</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/product/18/">HDPE water Pipe</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/product/19/">HDPE Telecom Duct</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/product/20/">HDPE Sewerage  Pipe</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/product/21/">HDPE Duct Pipe </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/product/22/">HDPE Coil Pipe</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/product/23/">HDPE Conduit Pipe  </a>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                            <!-- /.col-md-4  -->
+                                        </div>
+                                    </div>
+                                    <!--  /.container  -->
+
+
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    About
+                                </a>
+                                <div class="dropdown-menu about-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">About</a>
+                                    <a class="dropdown-item" href="/privacy/">Privacy Policy</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/enquiry/">Enquiry</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/contact">Contact Us</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+
+                </nav>
+            </div>
+        <!-- Headers-4 block -->
+        <!-- inner banner -->
+        <section class="cyber-inner-banner-main">
+            <div class="about-inner">
+                <div class="wrapper">
+
+                    <ul class="breadcrumbs-custom-path">
+                        <h3>About</h3>
+                        <li><a href="/">Home <span class="fa fa-angle-right" aria-hidden="true"></span></a>
+                        </li>
+                        <li class="active">About</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- //covers -->
+        <!-- Content-with-photo23 block -->
+        <section class="cyber-content-with-photo-23">
+            <div id="cwp23-block">
+                <div class="wrapper">
+                    <div class="d-grid cwp23-content">
+                        <div class="cwp23-img">
+                            <img src="{% static './images/Indian-Factory.jpg' %}"  width="90%" class="align-left slide-in img-responsive" alt="" />
+                        </div>
+                        <div class="cwp23-text">
+                            <div class="cwp23-title">
+                                <h3>Glimpse of AVS</h3>
+                            </div>
+                            <div class="cwp23-text-cols">
+                                <div class="column">
+                                    <h4>History</h4>
+                                    <p>AVS was established in 2001. We have been in the industry for over 20 years.
+                                    </p>
+                                </div>
+                                <div class="column">
+                                    <h4>Vision</h4>
+                                    <p>Product quality and customer satisfaction is paramount.
+                                    </p>
+                                </div>
+                                <div class="column">
+                                    <h4>Strategy</h4>
+                                    <p>Our vision is to create high quality products which are safe for our customers and for the environment.
+                                    </p>
+                                </div>
+                                <div class="column">
+                                    <h4>Machine</h4>
+                                    <p>Our machinces are imported from the best manufacturing companines and regulary inspect and mantain our machinery.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Content-with-photo23 block -->
+        <section class="cyber-features">
+            <div class="grid top-bottom">
+                <div class="wrapper">
+                    <div class="middle-section grid-column text-center">
+                        <div class="three-grids-columns">
+                            <span class="fa fa-lightbulb-o"></span>
+                            <h4>Who We Are</h4>
+                            <p>Founded in the year 2001, AVS Industries we are the most reckoned name as the wood plastic composite Manufacturer in India. </p>
+
+                        </div>
+                        <div class="three-grids-columns">
+                            <span class="fa fa-shirtsinbulk"></span>
+                            <h4>Our Quality</h4>
+                            <p>We are ably serving to our profoundly respected customers by providing a broad range of WPC Wall Panel, Door Frames, Skirting and Cornice, Wooden Staircase, False Ceiling Installation Services and more.</p>
+
+                        </div>
+                        <div class="three-grids-columns">
+                            <span class="fa fa-user-secret"></span>
+                            <h4>Our Process</h4>
+                            <p>Our customers consistency of rumored association, developers, emergency clinics, schools, showrooms, private, condos, home and farm. </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- teams 32 block -->
+        <br><br><br>
+
+        <!-- //teams 32 block -->
+        <section class="cyber-content-with-photo-6">
+            <!-- /content-with-photo -->
+            <div class="content-with-photo">
+                <div class="float-lt photo-inn">
+                    <h2>Chronicle of AVS.</h2>
+                    <p>AVS is the one of Indian first manufacturer to introduce WPC technology in India since 2010,
+                        using state of art world class machines and globally accepted technologies.</p>
+                    <p>Our brand (AVS) is a results of continuous research & developments. our products are dependable
+                        and carry great value for money and have been thoroughly tested and certified by various
+                        national agencies.</p>
+                </div>
+                <div class="photo-img">
+                    <img src="{% static './images/Indian-Factory-2.jpg' %}"  width="500px" class="img-responsive align-right slide-in" alt="" />
+                </div>
+
+            </div>
+
+            <!-- /content-with-photo -->
+        </section>
+        <!-- footer-29 block -->
+        <br>
+    <section class="cyber-footer-29-main">
+      <div class="footer-29">
+        <div class="fot-top">
+          <div class="wrapper">
+            <div class="d-grid bottom-source">
+              <div class="grid-2-footer">
+                <a class="foot-logo" href="/"
+                  ><span class="fa fa-industry"></span>
+                  AVS
+                </a>
+              </div>
+              <div class="grid-1-footer">
+                <a href="/contact" class="actionbg1 btn"
+                  >Contact Form
+                  <span class="fa fa-long-arrow-right" aria-hidden="true"></span
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="d-grid grid-col-4 footer-top-29">
+            <div class="footer-list-29">
+              <h6 class="footer-title-29">Company</h6>
+              <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/enquiry/">Enquiry</a></li>
+                <li><a href="/contact">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-list-29">
+              <ul>
+                <h6 class="footer-title-29">Credentials</h6>
+                <li style="font-weight: 400">ISO</li>
+                <li style="font-weight: 400">Register Care</li>
+                <li style="font-weight: 400">NSIC</li>
+                <li style="font-weight: 400">ISI UK</li>
+                <li style="font-weight: 400">UK Cert</li>
+               
+              </ul>
+            </div>
+            <div class="footer-list-29">
+              <ul>
+                <h6 class="footer-title-29">Industries</h6>
+                <li style="font-weight: 400">AVS PLASTICS</li>
+                <li style="font-weight: 400">ADO PIPES</li>
+                <li style="font-weight: 400">ADO WOODS</li>
+  
+              </ul>
+            </div>
+            <div class="footer-list-29">
+              <h6 class="footer-title-29">Contact Info</h6>
+              <div class="cont-details-main">
+                <div class="cont-top1">
+                  <div class="cont-left1">
+                    <span class="fa fa-mobile"></span>
+                  </div>
+                  <div class="cont-right1">
+                    <h6><a href="tel:+918224024277">+91 8224024277</a></h6>
+                    <p>Contact us</p>
+                  </div>
+                </div>
+                <div class="cont-top1">
+                  <div class="cont-left1">
+                    <span class="fa fa-clock-o"></span>
+                  </div>
+                  <div class="cont-right1">
+                    <h6>Working time</h6>
+                    <p>Mon - Fri: 9:00 - 19:00 / Closed on Weekends</p>
+                  </div>
+                </div>
+                <div class="cont-top1">
+                  <div class="cont-left1">
+                    <span class="fa fa-map-marker"></span>
+                  </div>
+                  <div class="cont-right1">
+                    <h6>Company Headquarters</h6>
+                    <p>Birla Nagar</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer_copy">
+        <div class="wrapper">
+          <div class="d-grid grid-col-2 midd-footer-29">
+            <div class="main-social-footer-29">
+              <a href="#"><span class="fa fa-facebook"></span></a>
+              <a href="#"><span class="fa fa-twitter"></span></a>
+              <a href="#"><span class="fa fa-instagram"></span></a>
+              <a href="#"><span class="fa fa-dribbble"></span></a>
+              <a href="#"><span class="fa fa-linkedin"></span></a>
+            </div>
+            <ul class="list-btm-29">
+              <li><a href="/privacy/">Privacy policy</a></li>
+            </ul>
+          </div>
+          <div class="d-grid grid-col-2 bottom-copies">
+            <p class="copy-footer-29">© 2019 AVS. All rights reserved.</p>
+            <p class="sub-paragraph right-side-con">
+              Design By <a href="https://cybercycloid.com/">cybercycloid</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- move top -->
+      <button onclick="topFunction()" id="movetop" title="Go to top">
+        <span class="fa fa-angle-up"></span>
+      </button>
+      
+      <!-- /move top -->
+    </section>
+        <!-- //footer-29 block -->
+         <script>
+                // When the user scrolls down 20px from the top of the document, show the button
+                window.onscroll = function () {
+                    scrollFunction()
+                };
+
+                function scrollFunction() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        document.getElementById("movetop").style.display = "block";
+                    } else {
+                        document.getElementById("movetop").style.display = "none";
+                    }
+                }
+
+                // When the user clicks on the button, scroll to the top of the document
+                function topFunction() {
+                    document.body.scrollTop = 0;
+                    document.documentElement.scrollTop = 0;
+                }
+            </script>
+
+            <script>
+            function debounce(func,wait = 20,immediate = true) {
+                var timeout;
+                return function () {
+                    var context = this,args = arguments;
+                    var later = function () {
+                        timeout = null;
+                        if (!immediate) func.apply(context,args);
+                    };
+                    var callNow = immediate && !timeout;
+                    clearTimeout(timeout);
+                    timeout = setTimeout(later,wait);
+                    if (callNow) func.apply(context,args);
+                };
+            };
+
+            const sliderImages = document.querySelectorAll('.slide-in');
+
+            function checkSlide() {
+                sliderImages.forEach(sliderImage => {
+                    // half way through the image
+                    const slideInAt = (window.scrollY + window.innerHeight) - sliderImage.height / 2;
+                    // bottom of the image
+                    const imageBottom = sliderImage.offsetTop + sliderImage.height;
+                    const isHalfShown = slideInAt > sliderImage.offsetTop;
+                    const isNotScrolledPast = window.scrollY < imageBottom;
+                    if (isHalfShown && isNotScrolledPast) {
+                        sliderImage.classList.add('active');
+                    } else {
+                        sliderImage.classList.remove('active');
+                    }
+                });
+            }
+
+            window.addEventListener('scroll',debounce(checkSlide));
+
+        </script>
+
+       
+    </body>
+
+</html>

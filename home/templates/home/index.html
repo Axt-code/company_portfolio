@@ -1,0 +1,1073 @@
+{% load static  %}
+{% comment %} avsindustries 246.avs.avs {% endcomment %}
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>AVS</title>
+           <link rel="stylesheet" href="{% static './css/index.css' %}">
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+        <!-- //jquery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+        <!-- Owl crousel -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+        <!-- NAV BAR -->
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet"
+            id="bootstrap-css">
+
+
+        <!-- OWL CROSUAL -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"> -->
+
+        <!-- FONT AWSEOME     -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- MAIN CSS FILE     -->
+     
+
+        <!-- CROUSAL -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+
+        <script>
+            $(document).ready(function () {
+                // executes when HTML-Document is loaded and DOM is ready
+
+                // breakpoint and up  
+                $(window).resize(function () {
+                    if ($(window).width() >= 980) {
+
+                        // when you hover a toggle show its dropdown menu
+                        $(".navbar .dropdown-toggle").hover(function () {
+                            $(this).parent().toggleClass("show");
+                            $(this).parent().find(".dropdown-menu").toggleClass("show");
+                        });
+
+                        // hide the menu when the mouse leaves the dropdown
+                        $(".navbar .dropdown-menu").mouseleave(function () {
+                            $(this).removeClass("show");
+                        });
+
+                        // do something here
+                    }
+                });
+
+
+
+                // document ready  
+            });
+        </script>
+
+
+        <meta name="robots" content="noindex">
+
+        <body>
+            <!-- Demo bar start -->
+            <!-- New toolbar-->
+            <style>
+                /* Global Styles */
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.navbar, .navbar-nav {
+    color: #111 !important;
+    background: transparent !important;
+    font-weight: normal !important;
+    font-size: 15px !important;
+}
+
+.nav-item {
+    padding: 0px !important;
+}
+
+.active:hover {
+    background-color: rgba(214, 222, 224, 0.92) !important;
+}
+
+.flex-column li:hover, .dropdown-item:hover {
+    background-color: rgba(151, 189, 199, 0.99) !important;
+}
+
+.nav-link {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    color: #000;
+    text-transform: capitalize;
+}
+
+.about-menu {
+    width: 180px !important;
+    margin: 2px 20rem;
+}
+
+.navbar .dropdown-menu {
+    background-color: rgba(214, 222, 224, 0.92) !important;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+    .about-menu {
+        margin: 0;
+    }
+
+    #cyberDemoBar a.desktop-mode {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    #cyberDemoBar a.tablet-mode {
+        display: none;
+    }
+}
+
+@media (max-width: 568px) {
+    #cyberDemoBar a.mobile-mode {
+        display: none;
+    }
+
+    #cyberDemoBar .responsive-icons {
+        margin-top: 0;
+        border-top: none;
+        padding-top: 0;
+    }
+
+    #right-sidebar, .pull-right {
+        width: 90px;
+    }
+
+    #cyberDemoBar .no-margin-bottom-mobile {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 376px) {
+    .carousel-caption {
+        margin: auto 20% !important;
+    }
+
+    .we {
+        font-size: 3vh !important;
+    }
+
+    .x {
+        font-size: 4vh !important;
+    }
+
+    p {
+        font-size: 2vh !important;
+    }
+}
+
+/* Right Sidebar */
+#right-sidebar {
+    width: 90px;
+    position: fixed;
+    height: 100%;
+    z-index: 1000;
+    right: 0;
+    top: 0;
+    margin-top: 60px;
+    transition: all .5s ease-in-out;
+    overflow-y: auto;
+}
+
+.hide-right-bar-notifications {
+    margin-right: -300px !important;
+    transition: all .3s ease-in-out;
+}
+
+/* Cyber Demo Bar */
+#cyberDemoBar {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    padding: 40px 5px;
+    padding-top: 70px;
+    margin-bottom: 70px;
+    background: #0D1326;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+}
+
+#cyberDemoBar a {
+    display: block;
+    color: #e6ebff;
+    text-decoration: none;
+    line-height: 24px;
+    opacity: .6;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#cyberDemoBar a:hover {
+    opacity: 1;
+}
+
+#cyberDemoBar .responsive-icons {
+    margin-top: 30px;
+    border-top: 1px solid #41414d;
+    padding-top: 40px;
+}
+
+#cyberDemoBar .demo-btns {
+    border-top: 1px solid #41414d;
+    padding-top: 30px;
+}
+
+.toggle-right-sidebar span {
+    background: #0D1326;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #e6ebff;
+    border-radius: 50px;
+    font-size: 26px;
+    cursor: pointer;
+    opacity: .5;
+}
+
+.pull-right {
+    float: right;
+    position: fixed;
+    right: 0;
+    top: 70px;
+    width: 90px;
+    z-index: 99999;
+    text-align: center;
+}
+
+/* Swiper Styles */
+.swiper-container {
+    width: 80%;
+    height: 240px;
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+@media only screen and (min-width: 769px) {
+    .swiper-slide:first-child {
+        transition: transform 100ms;
+    }
+
+    .swiper-slide:first-child img {
+        transition: box-shadow 500ms;
+    }
+
+    .swiper-slide.swiper-slide-active:first-child {
+        transform: translateX(50%);
+        z-index: 2;
+    }
+
+    .swiper-slide.swiper-slide-active:first-child img {
+        box-shadow: 0px 32px 80px rgba(0, 0, 0, 0.35);
+    }
+
+    .swiper-slide:nth-child(2) {
+        transition: transform 100ms;
+    }
+
+    .swiper-slide.swiper-slide-next:nth-child(2) {
+        transform: translateX(55%);
+        z-index: 1;
+    }
+
+    .swiper-container[dir=rtl] .swiper-slide.swiper-slide-active:first-child {
+        transform: translateX(-50%);
+    }
+
+    .swiper-container[dir=rtl] .swiper-slide.swiper-slide-next:nth-child(2) {
+        transform: translateX(-55%);
+    }
+}
+
+/* Carousel */
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Animations */
+.align-left {
+    float: left;
+    margin-right: 20px;
+}
+
+.align-right {
+    float: right;
+    margin-left: 40px !important;
+}
+
+.slide-in {
+    opacity: 0;
+    transition: all .5s;
+}
+
+.align-left.slide-in {
+    transform: translateX(-30%) scale(0.95);
+}
+
+.align-right.slide-in {
+    transform: translateX(30%) scale(0.95);
+}
+
+.slide-in.active {
+    opacity: 1;
+    transform: translateX(0%) scale(1);
+}
+
+/* Typography */
+h5 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+           </style>
+            <script>
+                $('.carousel').carousel()
+            </script>
+
+
+
+            <!-- Top Menu 1 -->
+            <section class="cyber-top-menu-1 p-sticky-md">
+                <div class="top-hd">
+                    <div class="wrapper">
+                        <header class="d-grid grid-columns-2">
+
+
+                            <div class="accounts">
+                                <li class="top_li"><span class="fa fa-mobile"></span><a
+                                        href="tel:+142 5897555">+919999999999</a> </li>
+                                <li class="top_li1"><span class="fa fa-map-marker"></span> Birla Nagar Gwalior </li>
+                                <li class="top_li2"><span class="fa fa-clock-o"></span> Mon - Sat 6:00 - 18:00 / Closed
+                                    on Weekends</li>
+                            </div>
+                        </header>
+                    </div>
+                </div>
+            </section>
+            <!-- //Top Menu 1 -->
+            <!-- Headers-4 block -->
+            <div class="n w-100" style="background-color: whitesmoke;">
+                <nav class="navbar navbar-expand-lg w-75 mx-auto navbar-light" style="background-color: whitesmoke;">
+                    <a class="navbar-brand brand-logo" href="/">
+                        <h1><span class="fa fa-industry"></span> AVS</h1>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class=" navbar-nav mr-auto ">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Products
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+
+                                    <div class="container" style="background-color: rgba(214, 222, 224, 0.92) !important ">
+                                        <div class="row">
+                                           <div class="col-md-4">
+
+                                                <ul class="nav flex-column">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" href="#">Flexible Packaging</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/product/3/">LDPE Poly Bag</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/product/2/">Liner LDPE /HM </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/product/4/">Air Bubble Film Rolls </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/product/5/">Air Bubble Pouches</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/product/6/">Non Woven Fabric Bag</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/product/7/">LDPE Shrink Film Rolls/Pouches</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/product/8/">LDPE Printed Bag</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/product/9/">Laminated Pouches</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- /.col-md-4  -->
+                                            <div class="col-md-4">
+
+                                                <ul class="nav flex-column">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" href="#">WPC Products</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/product/10/">Door Frames</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/product/11/">Ceiling Strip wall Paneling</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/product/12/">Decking (Ado deck)</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/product/13/">Front Elevation clading</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/product/14/">WPC planks for gate</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/product/15/">Stair Case & Hand Railing</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/product/16/">WPC Benches </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/product/17/">Picket Fenching</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- /.col-md-4  -->
+                                            <div class="col-md-4">
+
+                                                <ul class="nav flex-column">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" href="#">HDPE Pipe</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/product/18/">HDPE water Pipe</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/product/19/">HDPE Telecom Duct</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/product/20/">HDPE Sewerage  Pipe</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/product/21/">HDPE Duct Pipe </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/product/22/">HDPE Coil Pipe</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="/product/23/">HDPE Conduit Pipe  </a>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                            <!-- /.col-md-4  -->
+                                        </div>
+                                    </div>
+                                    <!--  /.container  -->
+
+
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    About
+                                </a>
+                                <div class="dropdown-menu about-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="/about/">About</a>
+                                    <a class="dropdown-item" href="/privacy/">Privacy Policy</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/enquiry/">Enquiry</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/contact/">Contact Us</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+
+                </nav>
+            </div>
+            <!-- Headers-4 block -->
+        
+            <section class="cyber-hero-headers-14 hero" style="background-color: black;">
+                <div id="demo" class="carousel slide w-100" data-ride="carousel">
+
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators px-0">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+
+                    <!-- The slideshow -->
+                    <div class="carousel-inner w-100 px-0">
+                        <div class="carousel-item w-100 active">
+                            <img src="{% static './images/plastic_industries.jpg' %}" alt="Plastic Industry"
+                                height="500">
+                            <div class="carousel-caption d-md-block " style="margin-bottom: 25rem;">
+                                <h1 class="we" style="font-size:60px;">We Do</h1>
+
+                                <h1 class="x" style="font-weight: bolder; font-size:65px; color: #d14b2e;">Plastics</h1>
+                                <br>
+                                <p style="font-style: italic; font-size:25px;">A pioneer in delivering the best.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item w-100 ">
+                            <img src="{% static './images/wood_industries.jpg' %}" alt="Wood Industry" width="100%" height="500">
+                            <div class="carousel-caption  d-md-block " style="margin-bottom: 25rem;">
+                                <h1 class="we" style="font-size:60px;">We Do</h1>
+
+                                <h1 class="x" style="font-weight: bolder; font-size:65px; color: #d14b2e;">Woods</h1>
+                                <br>
+                                <p style="font-style: italic; font-size:25px;">A pioneer in delivering the best.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item w-100 ">
+                            <img src="{% static './images/pipe_industries.jpg' %}" alt="Pipe Industry" width="100%" height="500">
+                            <div class="carousel-caption  d-md-block " style="margin-bottom: 30rem;">
+                                <h1  class="we" style="font-size:60px;">We Do</h1>
+
+                                <h1 class="x" style="font-weight: bolder; font-size:65px; color: #d14b2e;">Pipes</h1>
+                                <br>
+                                <p style="font-style: italic; font-size:25px;">A pioneer in delivering the best.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev px=0" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next px-0" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </section>
+
+
+            <br><br><br>
+            <!-- Heroheader14 block -->
+            <!-- specifications -->
+            <section class="cyber-specifications-9">
+                <div class="main-cyb">
+                    <div class="wrapper">
+                        <div class="d-flex flex-wrap main-cont-wthree-fea">
+                            <div class="grids-speci">
+                                <div class="speci-inner">
+                                    <div class="sp-lft">
+                                        <span class="fa fa-handshake-o"></span>
+                                    </div>
+                                    <div class="sp-rgt">
+                                        <h3 class="title-spe">800+</h3>
+                                        <h4>
+                                            <bold>indestructible</bold>
+                                            highly demanded products
+                                        </h4>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="grids-speci midd-eff-spe">
+                                <div class="speci-inner">
+                                    <div class="sp-lft">
+                                        <span class="fa fa-users"></span>
+                                    </div>
+                                    <div class="sp-rgt">
+                                        <h3 class="title-spe">400+</h3>
+                                        <h4>
+                                            <bold>Highly </bold> specialised
+                                            employees
+                                        </h4>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="grids-speci midd-eff-las">
+                                <div class="speci-inner">
+                                    <div class="sp-lft">
+                                        <span class="fa fa-globe"></span>
+                                    </div>
+                                    <div class="sp-rgt">
+                                        <h3 class="title-spe">15+</h3>
+                                        <h4>
+                                            <bold>Cities </bold>
+                                            around the countries
+                                        </h4>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <br><br><br>
+            <!-- features -->
+            <section class="cyber-feature-9">
+                <div class="main-cyb">
+                    <div class="wrapper">
+                        <div class="main-cont-wthree-fea">
+                            <div class="grids-feature">
+                                <span class="fa fa-plug"></span>
+                                <h4><a href="#" class="title-head" style="font-size:23px">INNOVATION, QUALITY & WARRANTY </a></h4>
+                                <p>Delivering quality without compromise is the reason AVS has a huge customer base. We are constantly innovating with new profiles and finishes to suit market trends, delivering them following the highest quality standards in the industry.
+                                </p>
+                            </div>
+                            <div class="grids-feature">
+                                <span class="fa fa-cogs"></span>
+                                <h4><a href="#" class="title-head" style="font-size:23px">NEW DIMENSIONS NEW POSSIBILITIES </a></h4>
+                                <p>Our wide range of profiles & colours open up design dimensions for various range of products. This is a result of our continuous research and learning from the market, helping us innovate based on dynamic market trends to cater our customer needs.
+                                </p>
+                            </div>
+                            <div class="grids-feature">
+                                <span class="fa fa-legal"></span>
+                                <h4><a href="#" class="title-head" style="font-size:23px">DELIVERING VALUE</a></h4>
+                                <p>Delivering value through a high quality product while being affordable is a mix only few have mastered. Our products are durable. Delivering value through superior products being affordable and competitive combined with widest range of products for multiple applications is something AVS is chosen for. 
+                                </p>
+                            </div>
+                            <div class="grids-feature">
+                                <span class="fa fa-tint"></span>
+                                <h4><a href="#feature" class="title-head" style="font-size:23px">CUSTOMIZE WITH AVS </a></h4>
+                                <p>Keeping in mind every customer's needs are different, we at AVS understand how to satisfy specific requirements for large project installations. Which is why we offer customizations options that aid design and optimize costs by minimizing product wastage.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <br><br><br>
+            <!-- //features -->
+            <!-- covers -->
+          <section class="cyber-covers-9-main">
+                <div class="covers-9">
+                    <div class="wrapper">
+                        <div class="cover-top-center-9">
+                            <div class="cybers_cover_txt-9">
+                                <h6 style="color:#B73225; font-size: 35px; " class="tag-cover-9">Why choose</h6>
+                                <h3 style="color: #B73225; font-size: 40px; " class="title-cover-9">AVS?</h3>
+                                <b>
+                                    <p style="color: rgb(255, 255, 255);" class="para-cover-9">AVS is a pioneer in
+                                        plastics
+                                        and WPC with a vision to lead the industry and continually set benchmarks with
+                                        uncompromised quality and unmatched product features. AVS offer a range of
+                                        product profiles that complement design development for multiple applications
+                                        for our customers. We at AVS create aesthetic designs that adorn your outdoor
+                                        and indoor spaces without compromising the quality.</p>
+                                    <a href="/about/" class="actionbg btn">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img>
+            </section>
+            <br>
+            <!-- //covers -->
+            <!-- content-with-photo4 block -->
+            <section class="cyber-content-with-photo-4">
+                <div id="content-with-photo4-block">
+                    <div class="wrapper">
+                        <div class="cwp4-two">
+                            <div class="cwp4-text">
+                                <h4>What AVS stands for?</h4>
+                                <p>Our team is committed to provide the best services to our customers. We at AVS strive to make our customers service smooth and efficient. We deliver what we promise.
+                                </p>
+                                <ul class="cont-4 ">
+                                    <li><span class="fa fa-arrow-circle-right" aria-hidden="true"></span>At AVS we make sure we give the best to our skilled worker.</li>
+                                    <li><span class="fa fa-arrow-circle-right" aria-hidden="true"></span>Safety and well being of our workers and staff are well taken care of.</li>
+                                    <li><span class="fa fa-arrow-circle-right" aria-hidden="true"></span>We recycle  and reuse our raw material so that nothing goes to waste</li>
+                                    <li><span class="fa fa-arrow-circle-right" aria-hidden="true"></span>We are constantly working to make our environment healthier by manufacturing eco friendly products.</li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="cwp4-image">
+                                <img src="{% static './images/worker.jpg' %}" width="90%" class="img-responsive align-right slide-in"  alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- content-with-photo4 block -->
+            <section class="cyber-features-6">
+                <!-- /features -->
+                <div class="features">
+                    <div class="wrapper">
+                        <div class="fea-gd-vv">
+                            <div class="float-lt feature-gd">
+                                <div class="icon"> <span class="fa fa-clipboard" aria-hidden="true"></span></div>
+                                <div class="icon-info">
+                                    <h3>Service</h3>
+                                    <p>We provide assistance right from placing order to delivering it. We promise you
+                                        the best possible service. </p>
+                                </div>
+
+                            </div>
+                            <div class="float-mid feature-gd">
+                                <div class="icon"> <span class="fa fa-wrench" aria-hidden="true"></span></div>
+                                <div class="icon-info">
+                                    <h3>Maintenance</h3>
+                                    <p>we offer free maintenance after the completing the installation. </p>
+                                </div>
+                            </div>
+                            <div class="float-rt feature-gd">
+                                <div class="icon"> <span class="fa fa-truck" aria-hidden="true"></span></div>
+                                <div class="icon-info">
+                                    <h3>Delivery</h3>
+                                    <p>We promise swift and safe delivery of the products at your doorstep.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //features -->
+            </section>
+
+            <!--customers-7-->
+            <section class="cyber-customers-7">
+                <div class="customers_sur">
+                    <div class="wrapper">
+                        <h3>Testimonials</h3>
+                        <div class="customers-top_sur">
+
+
+                            <div class="customers-middle_sur">
+                                <div class="customers_grid">
+                                    <p class="sub-test">AVS is the most reckoned name as the Wooden Plastics Composites Manufacturer in India. They have state of the art machineries and quality assurance in manufacturing.</p>
+                                    <div class="customers-bottom_sur">
+                                        <div class="custo-img-res">
+                                            <img src="{% static './images/monseir2.jpg' %}" width="50px" height="50px" alt=" "
+                                                class="img-responsive">
+                                        </div>
+                                        <div class="custo_grid">
+                                            <h5>Godrej</h5>
+                                            <span>Client</span>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--//customers-7-->
+            <br>
+            <h3
+                style="font-family:sans-serif; font-size: 3rem; text-align: center; text-decoration: none; color:#003b5e; font-weight: 700; ">
+                Our Clients
+            </h3>
+            <br><br>
+            <div class="row w-75 mx-auto justify-content-center align-items-center">
+                {% for i in clients %}
+                    <div class="col-lg-3 col-md-6 col-12 my-3 d-flex justify-content-center">
+                        <a href="#" target="_blank" rel="noopener">
+                            <img alt="{{ i.client_name }}" src="{{ i.client_image.url }}" width="150px" height="70px"
+                                 alt="Open source fully loaded CMS in #2019" class="zoom">
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+            <br><br><br>
+            <section class="cyber-feature-3">
+                <div class="grid top-bottom">
+                    <div class="wrapper">
+                        <div class="middle-section grid-column text-center">
+                            <div class="three-grids-columns">
+                                <span class="fa fa-map-marker"></span>
+                                <h4>Our offices</h4>
+                               
+                                <a href="/contact/" class="actionbg">Nearest Office </a>
+                            </div>
+                            <div class="three-grids-columns">
+                                <span class="fa fa-envelope-o"></span>
+                                <h4>Drop us a line</h4>
+                              
+                                <a href="/contact/" class="actionbg">Fill Our Form </a>
+                            </div>
+                            <div class="three-grids-columns">
+                                <span class="fa fa-life-ring"></span>
+                                <h4>Enquiry about product</h4>
+                                
+                                <a href="/enquiry/" class="actionbg">Enquiry form</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- footer-29 block -->
+               <section class="cyber-footer-29-main">
+      <div class="footer-29">
+        <div class="fot-top">
+          <div class="wrapper">
+            <div class="d-grid bottom-source">
+              <div class="grid-2-footer">
+                <a class="foot-logo" href="/"
+                  ><span class="fa fa-industry"></span>
+                  AVS
+                </a>
+              </div>
+              <div class="grid-1-footer">
+                <a href="/contact" class="actionbg1 btn"
+                  >Contact Form
+                  <span class="fa fa-long-arrow-right" aria-hidden="true"></span
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="d-grid grid-col-4 footer-top-29">
+            <div class="footer-list-29">
+              <h6 class="footer-title-29">Company</h6>
+              <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/enquiry/">Enquiry</a></li>
+                <li><a href="/contact">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-list-29">
+              <ul>
+                <h6 class="footer-title-29">Credentials</h6>
+                <li style="font-weight: 400">ISO</li>
+                <li style="font-weight: 400">Register Care</li>
+                <li style="font-weight: 400">NSIC</li>
+                <li style="font-weight: 400">ISI UK</li>
+                <li style="font-weight: 400">UK Cert</li>
+               
+              </ul>
+            </div>
+            <div class="footer-list-29">
+              <ul>
+                <h6 class="footer-title-29">Industries</h6>
+                <li style="font-weight: 400">AVS PLASTICS</li>
+                <li style="font-weight: 400">ADO PIPES</li>
+                <li style="font-weight: 400">ADO WOODS</li>
+  
+              </ul>
+            </div>
+            <div class="footer-list-29">
+              <h6 class="footer-title-29">Contact Info</h6>
+              <div class="cont-details-main">
+                <div class="cont-top1">
+                  <div class="cont-left1">
+                    <span class="fa fa-mobile"></span>
+                  </div>
+                  <div class="cont-right1">
+                    <h6><a href="tel:+918224024277">+91 8224024277</a></h6>
+                    <p>Contact us</p>
+                  </div>
+                </div>
+                <div class="cont-top1">
+                  <div class="cont-left1">
+                    <span class="fa fa-clock-o"></span>
+                  </div>
+                  <div class="cont-right1">
+                    <h6>Working time</h6>
+                    <p>Mon - Fri: 9:00 - 19:00 / Closed on Weekends</p>
+                  </div>
+                </div>
+                <div class="cont-top1">
+                  <div class="cont-left1">
+                    <span class="fa fa-map-marker"></span>
+                  </div>
+                  <div class="cont-right1">
+                    <h6>Company Headquarters</h6>
+                    <p>Birla Nagar</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer_copy">
+        <div class="wrapper">
+          <div class="d-grid grid-col-2 midd-footer-29">
+            <div class="main-social-footer-29">
+              <a href="#"><span class="fa fa-facebook"></span></a>
+              <a href="#"><span class="fa fa-twitter"></span></a>
+              <a href="#"><span class="fa fa-instagram"></span></a>
+              <a href="#"><span class="fa fa-dribbble"></span></a>
+              <a href="#"><span class="fa fa-linkedin"></span></a>
+            </div>
+            <ul class="list-btm-29">
+              <li><a href="/privacy/">Privacy policy</a></li>
+            </ul>
+          </div>
+          <div class="d-grid grid-col-2 bottom-copies">
+            <p class="copy-footer-29">© 2019 AVS. All rights reserved.</p>
+            <p class="sub-paragraph right-side-con">
+              Design By <a href="https://cybercycloid.com/">cybercycloid</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      {% comment %} <!-- move top -->
+      <button onclick="topFunction()" id="movetop" title="Go to top">
+        <span class="fa fa-angle-up"></span>
+      </button>
+       {% endcomment %}
+      <!-- /move top -->
+    </section>
+                <script>
+                var swiper = new Swiper('.swiper-container',{
+                    slidesPerView: 1,
+                    centeredSlides: false,
+                    slidesPerGroupSkip: 1,
+                    grabCursor: true,
+                    keyboard: { enabled: true },
+                    breakpoints: { 769: { slidesPerView: 2,slidesPerGroup: 2 } },
+                    scrollbar: { el: '.swiper-scrollbar' },
+                    navigation: { nextEl: '.swiper-button-next',prevEl: '.swiper-button-prev' },
+                    pagination: { el: '.swiper-pagination',clickable: true }
+                });
+            </script>
+                <script>
+                    // When the user scrolls down 20px from the top of the document, show the button
+                    window.onscroll = function () {
+                        scrollFunction()
+                    };
+
+                    function scrollFunction() {
+                        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                            document.getElementById("movetop").style.display = "block";
+                        } else {
+                            document.getElementById("movetop").style.display = "none";
+                        }
+                    }
+
+                    // When the user clicks on the button, scroll to the top of the document
+                    function topFunction() {
+                        document.body.scrollTop = 0;
+                        document.documentElement.scrollTop = 0;
+                    }
+                </script>
+                <script>
+                const hero = document.querySelector('.hero')
+                const text = document.querySelectorAll('.carousel-caption h1')
+                const walk = 20;
+
+                function shadow(e) {
+                    // const width = hero.offsetWidth;
+                    // const higth = hero.offsethight;
+                    const { offsetWidth: width,offsetHeight: heigth } = hero;
+                    let { offsetX: x,offsetY: y } = e;
+
+                    if (this != e.target) {
+                        x += e.target.offsetLeft;
+                        y += e.target.offsetTop;
+                    }
+                    //console.log(x,y);
+
+                    const xWalk = Math.round((x / width * walk) - (walk / 2));
+                    const yWalk = Math.round((y / heigth * walk) - (walk / 2));
+
+                    text.forEach((t,i) => {
+
+                        if (i % 2 === 0) {
+                            return t.style.textShadow = ` ${-xWalk}px ${-yWalk}px 0 grey`
+                        }
+                        else {
+                            return t.style.textShadow = ` ${-xWalk}px ${-yWalk}px 0 orange`
+                        }
+                    })
+
+
+
+                }
+
+                hero.addEventListener('mousemove',shadow);
+             </script>
+             <script>
+                function debounce(func,wait = 20,immediate = true) {
+                    var timeout;
+                    return function () {
+                        var context = this,args = arguments;
+                        var later = function () {
+                            timeout = null;
+                            if (!immediate) func.apply(context,args);
+                        };
+                        var callNow = immediate && !timeout;
+                        clearTimeout(timeout);
+                        timeout = setTimeout(later,wait);
+                        if (callNow) func.apply(context,args);
+                    };
+                };
+
+                const sliderImages = document.querySelectorAll('.slide-in');
+
+                function checkSlide() {
+                    sliderImages.forEach(sliderImage => {
+                        // half way through the image
+                        const slideInAt = (window.scrollY + window.innerHeight) - sliderImage.height / 2;
+                        // bottom of the image
+                        const imageBottom = sliderImage.offsetTop + sliderImage.height;
+                        const isHalfShown = slideInAt > sliderImage.offsetTop;
+                        const isNotScrolledPast = window.scrollY < imageBottom;
+                        if (isHalfShown && isNotScrolledPast) {
+                            sliderImage.classList.add('active');
+                        } else {
+                            sliderImage.classList.remove('active');
+                        }
+                    });
+                }
+
+                window.addEventListener('scroll',debounce(checkSlide));
+
+            </script>
+
+
+        </body>
+
+</html>
