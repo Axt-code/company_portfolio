@@ -73,7 +73,8 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'avs.wsgi.application'
+WSGI_APPLICATION = 'avs.wsgi.app'
+#WSGI_APPLICATION = 'avs.wsgi.application'
 
 
 # Database
